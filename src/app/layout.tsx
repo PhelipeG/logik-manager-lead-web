@@ -8,8 +8,44 @@ import GTMScript from '@/components/GTMScript';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Lead Management System',
+ title: 'Lead Management System - L0gik',
   description: 'Sistema de gestão de leads com rastreamento avançado',
+  keywords: [
+    'gestão de leads',
+    'lead management',
+    'captação de leads', 
+    'formulário de contato',
+    'painel administrativo',
+    'tracking de conversão',
+    'google analytics',
+    'crm leads',
+    'sistema de leads',
+    'logik'
+  ],
+   authors: [
+    { 
+      name: 'PhelipeG',
+      url: 'https://github.com/PhelipeG'
+    }
+  ],
+  creator: 'PhelipeG',
+    openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: '/',
+    title: 'Lead Management System - L0gik',
+    description: 'Sistema completo de gestão de leads com tracking avançado e painel administrativo profissional.',
+    siteName: 'L0gik Lead Manager',
+    images: [
+      {
+        url: '/screenshorts/painel-adminstrativo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Painel Administrativo do Sistema de Leads L0gik',
+        type: 'image/png',
+      }
+    ],
+  },
 };
 
 export default function RootLayout({
