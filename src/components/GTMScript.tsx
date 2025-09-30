@@ -1,6 +1,6 @@
 'use client';
 
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Script from 'next/script';
 import { useEffect } from 'react';
 
@@ -12,7 +12,6 @@ declare global {
 
 export default function GTMScript() {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
   useEffect(() => {
@@ -24,7 +23,7 @@ export default function GTMScript() {
         page_title: document.title,
       });
     }
-  }, [pathname, searchParams]);
+  }, [pathname]);
 
   if (!gtmId) {
     return null;

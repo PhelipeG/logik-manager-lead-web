@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import { Suspense } from 'react';
 import { Toaster } from 'react-hot-toast';
 
 import './globals.css';
@@ -94,7 +95,9 @@ export default function RootLayout({
             />
           </noscript>
         )}
-        <GTMScript />
+        <Suspense fallback={null}>
+          <GTMScript />
+        </Suspense>
         <AuthProvider>
           {children}
           <Toaster
