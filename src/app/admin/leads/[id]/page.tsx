@@ -44,12 +44,12 @@ export default function LeadDetailPage() {
 
   return (
     <div className="bg-dark min-h-screen">
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-4">
         <div className="mx-auto max-w-4xl">
           <div className="bg-dark-secondary border-secondary/20 overflow-hidden rounded-lg border shadow-lg">
             <LeadHeader lead={lead} />
 
-            <div className="space-y-6 p-6">
+            <div className="space-y-4 p-4">
               <LeadBasicInfo lead={lead} />
 
               <LeadMessage lead={lead} />

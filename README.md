@@ -3,24 +3,29 @@
 ## 📸 Screenshots da Aplicação
 
 ### 🌐 Formulário Público
+
 ![Formulário Público](./public/screenshorts/formulario-publico.png)
-*Formulário responsivo para captação de leads com validações e tracking automático*
+_Formulário responsivo para captação de leads com validações e tracking automático_
 
 ### 🏠 Área Administrativa - Login
+
 ![Área Administrativa](./public/screenshorts/area-adm.png)
-*Tela de login segura para acesso ao painel administrativo*
+_Tela de login segura para acesso ao painel administrativo_
 
 ### 📊 Painel Administrativo
+
 ![Painel Administrativo](./public/screenshorts/painel-adminstrativo.png)
-*Dashboard completo com listagem, busca, estatísticas e ações de CRUD*
+_Dashboard completo com listagem, busca, estatísticas e ações de CRUD_
 
 ### 👁️ Visualização Única do Lead
+
 ![Visualização Única](./public/screenshorts/visualizaçao-unica.png)
-*Página detalhada do lead com todas as informações e dados de tracking*
+_Página detalhada do lead com todas as informações e dados de tracking_
 
 ### ✏️ Editar Lead
+
 ![Editar Lead](./public/screenshorts/editar-lead.png)
-*Interface para edição de leads com validações e formatação automática*
+_Interface para edição de leads com validações e formatação automática_
 
 ## 🎯 Sobre a Aplicação
 
@@ -40,6 +45,7 @@ O **Lead Management System** é uma solução completa para captação e gestão
 ## ⚡ Funcionalidades Principais
 
 ### 🌐 **Formulário Público**
+
 - ✅ Campos obrigatórios: nome, email, telefone, cargo, data nascimento, mensagem
 - ✅ Validações em tempo real (email válido, telefone brasileiro)
 - ✅ Formatação automática de telefone: `(11) 99999-9999`
@@ -48,12 +54,14 @@ O **Lead Management System** é uma solução completa para captação e gestão
 - ✅ Design responsivo com tema verde/preto
 
 ### 🔐 **Sistema de Autenticação**
+
 - ✅ Login local seguro (admin@logik.com / admin123)
 - ✅ Proteção de rotas administrativas
 - ✅ Context de autenticação global
 - ✅ Redirecionamento automático
 
 ### 📊 **Painel Administrativo**
+
 - ✅ **Dashboard:** Estatísticas em tempo real
 - ✅ **Listagem:** Paginação, busca por nome/email
 - ✅ **Visualização:** Página individual do lead com dados completos
@@ -63,6 +71,7 @@ O **Lead Management System** é uma solução completa para captação e gestão
 - ✅ **Tracking:** Visualização de dados UTM/GCLID/FBCLID
 
 ### 🎨 **Design e UX**
+
 - ✅ **Tema Customizado:** Verde neon (#00FF00) + Preto (#0A0A0A)
 - ✅ **Responsivo:** Mobile-first design
 - ✅ **Componentes Modulares:** Button, Input, LoadingSpinner, ErrorState
@@ -72,7 +81,8 @@ O **Lead Management System** é uma solução completa para captação e gestão
 ## 🛠️ Como Rodar a Aplicação
 
 ### 📋 **Pré-requisitos**
-- Node.js 18+ 
+
+- Node.js 18+
 - npm, yarn ou pnpm
 
 ### 🚀 **Instalação e Execução**
@@ -96,6 +106,7 @@ npm run dev
 ```
 
 ### 🔑 **Credenciais de Acesso**
+
 ```
 Email: admin@logik.com
 Senha: admin123
@@ -132,15 +143,16 @@ NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
 ## 🏆 **Destaques Técnicos**
 
 ### 🧩 **Arquitetura Modular**
+
 - **Hooks Customizados:** `useLeads`, `useSingleLead`
 - **Componentes Reutilizáveis:** UI library própria
 - **Context Pattern:** Gerenciamento de estado global
 - **Barrel Exports:** Imports organizados
 
-
 ### 🎯 **Tracking Profissional**
+
 - **Enhanced Conversions** com dados reais do usuário
-- **Cross-platform tracking** (GA4 + Meta + Google Ads)  
+- **Cross-platform tracking** (GA4 + Meta + Google Ads)
 - **Dados enriquecidos** únicos para melhor análise
 - **UTM automation** completa
 
@@ -149,18 +161,18 @@ NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
 ## 🎨 **Tema e Design**
 
 ### 🎨 **Paleta de Cores**
+
 ```css
---primary: #00FF00      /* Verde neon */
---secondary: #092309    /* Verde escuro */ 
---background: #0A0A0A   /* Preto */
---light: #FFFFFF        /* Branco */
+--primary: #00ff00 /* Verde neon */ --secondary: #092309 /* Verde escuro */
+  --background: #0a0a0a /* Preto */ --light: #ffffff /* Branco */;
 ```
 
 ## 🤝 **Contribuição**
 
 Este projeto foi desenvolvido como parte de um teste técnico para demonstrar habilidades em:
+
 - ✅ Desenvolvimento Frontend Moderno
-- ✅ TypeScript e Next.js Avançado  
+- ✅ TypeScript e Next.js Avançado
 - ✅ Arquitetura de Componentes
 - ✅ Tracking e Analytics
 - ✅ UX/UI Design

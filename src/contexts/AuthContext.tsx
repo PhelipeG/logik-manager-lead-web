@@ -63,12 +63,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
           email: 'admin@logik.com',
         };
         const token = `token_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-
-        // Salva no localStorage
         localStorage.setItem('token', token);
         localStorage.setItem('user', JSON.stringify(userData));
 
-        // Atualiza estado
         setUser(userData);
 
         toast.success('Login realizado com sucesso!');

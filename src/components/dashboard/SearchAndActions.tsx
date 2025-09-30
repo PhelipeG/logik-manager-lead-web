@@ -19,7 +19,7 @@ export default function SearchAndActions({
       <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
         <div className="w-full flex-1 md:max-w-md">
           <Input
-            variant="dark"
+            variant="filled"
             placeholder="Buscar por nome ou email..."
             value={search}
             onChange={e => onSearchChange(e.target.value)}

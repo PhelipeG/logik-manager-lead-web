@@ -42,12 +42,23 @@ export function useLeads(initialParams: UseLeadsParams = {}): UseLeadsReturn {
   const [page, setPage] = useState(initialParams.page || 1);
   const [limit, setLimit] = useState(initialParams.limit || 10);
   const [search, setSearch] = useState(initialParams.search || '');
+  const [debouncedSearch, setDebouncedSearch] = useState(search);
+  const DELAY_FOR_DEBOUNCE = 500; // 500ms de delay
   const [pagination, setPagination] = useState({
     page: 1,
     limit: 10,
     total: 0,
     pages: 1,
   });
+
+  // Debounce para busca
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(search);
+    }, DELAY_FOR_DEBOUNCE);
+
+    return () => clearTimeout(timer);
+  }, [search]);
 
   const fetchLeads = useCallback(async () => {
     try {
@@ -59,15 +70,12 @@ export function useLeads(initialParams: UseLeadsParams = {}): UseLeadsReturn {
         limit,
       };
 
-      if (search.trim()) {
-        params.search = search;
+      if (debouncedSearch.trim()) {
+        params.search = debouncedSearch;
       }
-
       const response = await api.get<ApiResponse>('/api/leads', {
         params,
       });
-
-      // Adapta a resposta da API para o formato esperado
       if (response.data.success && response.data.data) {
         setLeads(response.data.data.leads);
         setPagination({
@@ -84,7 +92,6 @@ export function useLeads(initialParams: UseLeadsParams = {}): UseLeadsReturn {
       setError(errorMessage);
       toast.error(errorMessage);
 
-      // Em caso de erro, define valores padrão
       setLeads([]);
       setPagination({
         page: 1,
@@ -95,7 +102,7 @@ export function useLeads(initialParams: UseLeadsParams = {}): UseLeadsReturn {
     } finally {
       setLoading(false);
     }
-  }, [page, limit, search]);
+  }, [page, limit, debouncedSearch]);
 
   const createLead = useCallback(
     async (

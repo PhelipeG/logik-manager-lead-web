@@ -112,12 +112,12 @@ export default function EditLeadPage() {
 
   return (
     <div className="bg-dark min-h-screen">
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-4">
         <div className="mx-auto max-w-2xl">
-          <div className="bg-dark-secondary border-secondary/20 rounded-lg border p-8 shadow-lg">
-            <h1 className="text-light mb-6 text-2xl font-bold">Editar Lead</h1>
+          <div className="bg-dark-secondary border-secondary/20 rounded-lg border p-4 shadow-lg">
+            <h1 className="text-light mb-4 text-2xl font-bold">Editar Lead</h1>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
               <Input
                 {...register('name')}
                 label="Nome Completo *"
@@ -193,7 +193,7 @@ export default function EditLeadPage() {
                 )}
               </div>
 
-              <div className="flex gap-4 pt-4">
+              <div className="flex gap-4 pt-2">
                 <Button
                   type="submit"
                   variant="primary"

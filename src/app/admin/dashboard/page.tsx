@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/contexts/AuthContext';
 import { useLeads } from '@/hooks';
@@ -15,6 +15,8 @@ import {
 export default function DashboardPage() {
   const { user, logout, loading: authLoading } = useAuth();
   const router = useRouter();
+  const [searchValue, setSearchValue] = useState('');
+
   const {
     leads,
     loading,
@@ -49,6 +51,7 @@ export default function DashboardPage() {
   };
 
   const handleSearchChange = (value: string) => {
+    setSearchValue(value);
     setSearch(value);
   };
 
@@ -62,16 +65,13 @@ export default function DashboardPage() {
 
   return (
     <div className="min-h-screen">
-      <DashboardHeader
-        userName={user.name || user.email || 'Admin'}
-        onLogout={logout}
-      />
+      <DashboardHeader userName={user.email || 'Admin'} onLogout={logout} />
 
       <main className="container mx-auto px-4 py-8">
         <StatsCard totalLeads={pagination.total} />
 
         <SearchAndActions
-          search=""
+          search={searchValue}
           onSearchChange={handleSearchChange}
           onExport={handleExport}
         />
