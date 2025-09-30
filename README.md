@@ -1,5 +1,7 @@
 # 🚀 Lead Management System - L0gik
 
+> **📝 Observação Importante:** Embora eu não tenha conhecimento aprofundado em tracking e web analytics, tentei implementar as melhores práticas de tracking neste projeto como parte do aprendizado e demonstração técnica. A implementação inclui integração com Google Tag Manager, captura de UTMs, e eventos para GA4, Meta Pixel e Google Ads.
+
 ## 📸 Screenshots da Aplicação
 
 ### 🌐 Formulário Público
@@ -159,8 +161,6 @@ NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
 - **Cross-platform tracking** (GA4 + Meta + Google Ads)
 - **Dados enriquecidos** únicos para melhor análise
 - **UTM automation** completa
-
-> **📝 Observação:** Embora eu não tenha conhecimento aprofundado em tracking e web analytics, tentei implementar as melhores práticas de tracking neste projeto como parte do aprendizado e demonstração técnica. A implementação inclui integração com Google Tag Manager, captura de UTMs, e eventos para GA4, Meta Pixel e Google Ads.
 
 ## 🤝 **Contribuição**
 
