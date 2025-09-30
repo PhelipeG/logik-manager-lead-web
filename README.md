@@ -17,6 +17,10 @@ _Tela de login segura para acesso ao painel administrativo_
 ![Painel Administrativo](./public/screenshorts/painel-adminstrativo.png)
 _Dashboard completo com listagem, busca, estatísticas e ações de CRUD_
 
+
+![Export Leads Csv](./public/screenshorts/export-csv-leads.png)
+_Exportação de leads em formato CSV diretamente do painel administrativo_
+
 ### 👁️ Visualização Única do Lead
 
 ![Visualização Única](./public/screenshorts/visualizaçao-unica.png)
@@ -158,15 +162,6 @@ NEXT_PUBLIC_GA4_ID=G-XXXXXXXXXX
 
 > **📝 Observação:** Embora eu não tenha conhecimento aprofundado em tracking e web analytics, tentei implementar as melhores práticas de tracking neste projeto como parte do aprendizado e demonstração técnica. A implementação inclui integração com Google Tag Manager, captura de UTMs, e eventos para GA4, Meta Pixel e Google Ads.
 
-## 🎨 **Tema e Design**
-
-### 🎨 **Paleta de Cores**
-
-```css
---primary: #00ff00 /* Verde neon */ --secondary: #092309 /* Verde escuro */
-  --background: #0a0a0a /* Preto */ --light: #ffffff /* Branco */;
-```
-
 ## 🤝 **Contribuição**
 
 Este projeto foi desenvolvido como parte de um teste técnico para demonstrar habilidades em:
@@ -179,7 +174,6 @@ Este projeto foi desenvolvido como parte de um teste técnico para demonstrar ha
 - ✅ Boas Práticas de Código
 
 ---
-
 **Desenvolvido com ❤️ por [PhelipeG](https://github.com/PhelipeG) para L0gik**
 
 **🏆 Stack:** Next.js 15 + TypeScript + Tailwind CSS + React Hook Form + Zod + GTM
