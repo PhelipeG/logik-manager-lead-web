@@ -1,7 +1,8 @@
 'use client';
 
-import { Lead } from '@/types';
 import { Tag } from 'lucide-react';
+
+import { Lead } from '@/types';
 
 interface LeadTrackingDataProps {
   lead: Lead;

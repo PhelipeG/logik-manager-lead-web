@@ -1,7 +1,7 @@
 'use client';
 
-import { Lead } from '@/types';
 import { formatDateTime } from '@/lib/utils';
+import { Lead } from '@/types';
 
 interface LeadMetadataProps {
   lead: Lead;

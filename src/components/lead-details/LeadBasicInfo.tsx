@@ -1,8 +1,9 @@
 'use client';
 
-import { Lead } from '@/types';
-import { formatDate } from '@/lib/utils';
 import { Mail, Phone, Briefcase, Calendar } from 'lucide-react';
+
+import { formatDate } from '@/lib/utils';
+import { Lead } from '@/types';
 
 interface LeadBasicInfoProps {
   lead: Lead;

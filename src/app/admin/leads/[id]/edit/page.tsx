@@ -1,14 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useRouter, useParams } from 'next/navigation';
-import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { useAuth } from '@/contexts/AuthContext';
-import { formatPhone } from '@/lib/utils';
-import { useLeads, useSingleLeadById } from '@/hooks';
-import { Button, ErrorState, Input, LoadingSpinner } from '@/components/ui';
 import {
   Save,
   User,
@@ -18,6 +10,15 @@ import {
   Calendar,
   MessageSquare,
 } from 'lucide-react';
+import { useRouter, useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+
+import { Button, ErrorState, Input, LoadingSpinner } from '@/components/ui';
+import { useAuth } from '@/contexts/AuthContext';
+import { useLeads, useSingleLeadById } from '@/hooks';
+import { formatPhone } from '@/lib/utils';
 
 const leadSchema = z.object({
   name: z.string().min(2, 'Nome deve ter pelo menos 2 caracteres'),

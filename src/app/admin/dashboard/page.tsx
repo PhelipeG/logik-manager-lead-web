@@ -1,9 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useAuth } from '@/contexts/AuthContext';
-import { useLeads } from '@/hooks';
+import { useEffect, useState } from 'react';
+
 import {
   DashboardHeader,
   StatsCard,
@@ -11,6 +10,8 @@ import {
   LeadsTable,
   Pagination,
 } from '@/components/dashboard';
+import { useAuth } from '@/contexts/AuthContext';
+import { useLeads } from '@/hooks';
 
 export default function DashboardPage() {
   const { user, logout, loading: authLoading } = useAuth();

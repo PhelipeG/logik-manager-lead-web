@@ -1,40 +1,43 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
-import { AuthProvider } from '@/contexts/AuthContext';
 import { Toaster } from 'react-hot-toast';
+
+import './globals.css';
+
 import GTMScript from '@/components/GTMScript';
+import { AuthProvider } from '@/contexts/AuthContext';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
- title: 'Lead Management System - L0gik',
+  title: 'Lead Management System - L0gik',
   description: 'Sistema de gestão de leads com rastreamento avançado',
   keywords: [
     'gestão de leads',
     'lead management',
-    'captação de leads', 
+    'captação de leads',
     'formulário de contato',
     'painel administrativo',
     'tracking de conversão',
     'google analytics',
     'crm leads',
     'sistema de leads',
-    'logik'
+    'logik',
   ],
-   authors: [
-    { 
+  authors: [
+    {
       name: 'PhelipeG',
-      url: 'https://github.com/PhelipeG'
-    }
+      url: 'https://github.com/PhelipeG',
+    },
   ],
   creator: 'PhelipeG',
-    openGraph: {
+  openGraph: {
     type: 'website',
     locale: 'pt_BR',
     url: '/',
     title: 'Lead Management System - L0gik',
-    description: 'Sistema completo de gestão de leads com tracking avançado e painel administrativo profissional.',
+    description:
+      'Sistema completo de gestão de leads com tracking avançado e painel administrativo profissional.',
     siteName: 'L0gik Lead Manager',
     images: [
       {
@@ -43,7 +46,7 @@ export const metadata: Metadata = {
         height: 630,
         alt: 'Painel Administrativo do Sistema de Leads L0gik',
         type: 'image/png',
-      }
+      },
     ],
   },
 };

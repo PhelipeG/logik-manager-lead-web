@@ -98,6 +98,12 @@ const eslintConfig = [
       react: {
         version: 'detect',
       },
+      'import/resolver': {
+        typescript: {},
+        node: {
+          extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        },
+      },
       tailwindcss: {
         config: './tailwind.config.ts',
       },

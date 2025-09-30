@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
+import toast from 'react-hot-toast';
+
 import api from '@/lib/api';
 import { Lead } from '@/types';
-import toast from 'react-hot-toast';
 
 interface UseSingleLeadReturn {
   lead: Lead | null;

@@ -1,10 +1,8 @@
 'use client';
 
-import { useEffect } from 'react';
 import { useRouter, useParams } from 'next/navigation';
-import { useAuth } from '@/contexts/AuthContext';
-import { useSingleLeadById } from '@/hooks';
-import { LoadingSpinner, ErrorState } from '@/components/ui';
+import { useEffect } from 'react';
+
 import {
   LeadHeader,
   LeadBasicInfo,
@@ -13,6 +11,9 @@ import {
   LeadMetadata,
   LeadActions,
 } from '@/components/lead-details';
+import { LoadingSpinner, ErrorState } from '@/components/ui';
+import { useAuth } from '@/contexts/AuthContext';
+import { useSingleLeadById } from '@/hooks';
 
 export default function LeadDetailPage() {
   const { user } = useAuth();

@@ -19,7 +19,6 @@ _Tela de login segura para acesso ao painel administrativo_
 ![Painel Administrativo](./public/screenshorts/painel-adminstrativo.png)
 _Dashboard completo com listagem, busca, estatísticas e ações de CRUD_
 
-
 ![Export Leads Csv](./public/screenshorts/export-csv-leads.png)
 _Exportação de leads em formato CSV diretamente do painel administrativo_
 
@@ -174,6 +173,7 @@ Este projeto foi desenvolvido como parte de um teste técnico para demonstrar ha
 - ✅ Boas Práticas de Código
 
 ---
+
 **Desenvolvido com ❤️ por [PhelipeG](https://github.com/PhelipeG) para L0gik**
 
 **🏆 Stack:** Next.js 15 + TypeScript + Tailwind CSS + React Hook Form + Zod + GTM

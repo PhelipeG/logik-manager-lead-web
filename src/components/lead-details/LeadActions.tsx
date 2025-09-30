@@ -1,10 +1,11 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
-import { Lead } from '@/types';
-import { useLeads } from '@/hooks';
-import { Button } from '@/components/ui';
 import { Edit, ArrowLeft, Trash2 } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+
+import { Button } from '@/components/ui';
+import { useLeads } from '@/hooks';
+import { Lead } from '@/types';
 
 interface LeadActionsProps {
   lead: Lead;

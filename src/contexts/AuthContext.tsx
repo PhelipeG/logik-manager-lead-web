@@ -1,5 +1,6 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import {
   createContext,
   useContext,
@@ -7,9 +8,9 @@ import {
   useEffect,
   ReactNode,
 } from 'react';
-import { useRouter } from 'next/navigation';
-import { User } from '@/types';
 import toast from 'react-hot-toast';
+
+import { User } from '@/types';
 
 const VALID_CREDENTIALS = {
   email: 'admin@logik.com',

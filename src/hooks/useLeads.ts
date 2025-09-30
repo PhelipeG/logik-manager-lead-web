@@ -1,7 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
+import toast from 'react-hot-toast';
+
 import api from '@/lib/api';
 import { ApiError, ApiResponse, Lead, UseLeadsParams } from '@/types';
-import toast from 'react-hot-toast';
 
 const getErrorMessage = (error: unknown, defaultMessage: string): string => {
   if (error && typeof error === 'object' && 'response' in error) {

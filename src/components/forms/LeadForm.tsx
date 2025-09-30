@@ -1,11 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
-import { formatPhone, captureUTMParams } from '@/lib/utils';
-import { useLeads } from '@/hooks';
 import {
   Send,
   User,
@@ -15,7 +10,13 @@ import {
   Calendar,
   MessageSquare,
 } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { useForm } from 'react-hook-form';
+import { z } from 'zod';
+
 import { Button, Input } from '@/components/ui';
+import { useLeads } from '@/hooks';
+import { formatPhone, captureUTMParams } from '@/lib/utils';
 
 declare global {
   interface Window {

@@ -1,5 +1,6 @@
-import LeadForm from '@/components/forms/LeadForm';
 import { Briefcase } from 'lucide-react';
+
+import LeadForm from '@/components/forms/LeadForm';
 
 export default function Home() {
   return (

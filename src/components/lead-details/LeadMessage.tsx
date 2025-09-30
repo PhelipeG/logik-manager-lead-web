@@ -1,7 +1,8 @@
 'use client';
 
-import { Lead } from '@/types';
 import { MessageSquare } from 'lucide-react';
+
+import { Lead } from '@/types';
 
 interface LeadMessageProps {
   lead: Lead;
