@@ -51,8 +51,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   async function login(email: string, password: string) {
     try {
       await new Promise(resolve => setTimeout(resolve, 500));
-
-      // Verifica credenciais básicas
       if (
         email === VALID_CREDENTIALS.email &&
         password === VALID_CREDENTIALS.password

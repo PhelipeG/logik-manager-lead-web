@@ -46,19 +46,13 @@ body {
 .border-primary-dark {
   border-color: var(--primary-dark);
 }
-
-/* Hover states */
 .hover\:bg-primary:hover {
   background-color: var(--primary);
 }
-
-/* Estilo global para textarea - texto sempre preto */
 textarea {
   color: #1a1a1a !important;
   background-color: #ffffff !important;
 }
-
-/* Garante que placeholder mantenha cor adequada */
 textarea::placeholder {
   color: #6b7280 !important;
 }

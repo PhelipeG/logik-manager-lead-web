@@ -5,6 +5,7 @@ import { LogIn, Mail, Lock } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { z } from 'zod';
 
 import { Button, Input } from '@/components/ui';
@@ -33,7 +34,7 @@ export default function LoginPage() {
     try {
       await login(data.email, data.password);
     } catch {
-      // Error handled in context
+      toast.error('Falha ao fazer login. Verifique suas credenciais.');
     } finally {
       setIsSubmitting(false);
     }

@@ -183,8 +183,6 @@ export function useLeads(initialParams: UseLeadsParams = {}): UseLeadsReturn {
       const response = await api.get('/api/leads/export/csv', {
         responseType: 'blob',
       });
-
-      // Cria link para download
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');
       link.href = url;
