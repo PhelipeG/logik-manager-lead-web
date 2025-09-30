@@ -6,7 +6,6 @@ import typescript from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 import prettier from 'eslint-plugin-prettier';
 import reactHooks from 'eslint-plugin-react-hooks';
-import tailwindcss from 'eslint-plugin-tailwindcss';
 import unusedImports from 'eslint-plugin-unused-imports';
 import importPlugin from 'eslint-plugin-import';
 
@@ -39,7 +38,6 @@ const eslintConfig = [
       '@typescript-eslint': typescript,
       prettier,
       'react-hooks': reactHooks,
-      tailwindcss,
       'unused-imports': unusedImports,
       import: importPlugin,
     },
@@ -89,10 +87,6 @@ const eslintConfig = [
           },
         },
       ],
-
-      // Tailwind CSS
-      'tailwindcss/classnames-order': 'warn',
-      'tailwindcss/no-custom-classname': 'off',
 
       // Geral
       'no-console': 'warn',
