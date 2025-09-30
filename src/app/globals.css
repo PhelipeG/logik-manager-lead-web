@@ -1,26 +1,64 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Tema personalizado */
+  --primary: #00ff00; /* Verde neon */
+  --primary-dark: #0c3c0c; /* Verde escuro */
+  --background: #ffffff; /* Branco */
+  --background-dark: #0a0a0a; /* Preto */
+  --text: #0a0a0a; /* Preto para texto */
+  --text-light: #ffffff; /* Branco para texto */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--background-dark);
+  color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
+}
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.bg-background-dark {
+  background-color: var(--background-dark);
+}
+
+.text-primary {
+  color: var(--text);
+}
+
+.text-primary-dark {
+  color: var(--primary);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.border-primary-dark {
+  border-color: var(--primary-dark);
+}
+
+/* Hover states */
+.hover\:bg-primary:hover {
+  background-color: var(--primary);
+}
+
+/* Estilo global para textarea - texto sempre preto */
+textarea {
+  color: #1a1a1a !important;
+  background-color: #ffffff !important;
+}
+
+/* Garante que placeholder mantenha cor adequada */
+textarea::placeholder {
+  color: #6b7280 !important;
 }
